@@ -41,7 +41,7 @@ const microtime = require('microtime');
 
     await page.goto("http://project:3000", {
         waitUntil: "load",
-        timeout: 1800
+        timeout: 18000
     });
 
     page.on('console', async (message) => {

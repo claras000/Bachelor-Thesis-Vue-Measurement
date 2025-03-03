@@ -16,9 +16,9 @@ services:
     deploy:
       resources:
         limits:
-          memory: 500M
+          memory: 800M
           cpus: 1
-  gcb-puppeteer:
+  vue-puppeteer:
     image: greencoding/puppeteer-chrome
     volumes:
       - ./puppeteer-flow.js:/var/www/puppeteer-flow.js
@@ -30,14 +30,14 @@ services:
     deploy:
       resources:
         limits:
-          memory: 500M
+          memory: 800M
           cpus: 1
 
 
 
 flow:
   - name: Check Website
-    container: gcb-puppeteer
+    container: vue-puppeteer
     commands:
       - type: console
         command: node /var/www/puppeteer-flow.js
