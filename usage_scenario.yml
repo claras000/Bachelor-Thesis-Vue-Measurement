@@ -1,6 +1,6 @@
-name: Vue Vite App User scenario
+name: React Vite App User scenario
 author: clara osterburg correa
-description: Vue test
+description: React test
 
 services:
   project:
